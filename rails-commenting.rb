@@ -7,6 +7,7 @@
 # FILE: app/controller/blog_posts_controller.rb
 
 
+    # ---1) class inheritance 
 class BlogPostsController < ApplicationController
   def index
     # ---2) Fetch all blog posts from the database
@@ -53,6 +54,7 @@ class BlogPostsController < ApplicationController
     end
   end
 
+  # ---9) anything below private cannot be accessed outside of this file
   private
 
   # ---10) Define the allowed parameters for the blog post (title and content) to prevent mass assignment vulnerability
