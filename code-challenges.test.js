@@ -14,7 +14,7 @@
 
 // a) Create a test with an expect statement using the variable provided.
 
-test("Test hitchhikersCharacters", () => {
+describe("Test hitchhikersCharacters", () => {
   expect(hitchhikersCharacters.length).toBe(3);
   expect(hitchhikersCharacters[0].name).toBe("ford prefect");
   expect(hitchhikersCharacters[1].occupation).toBe("president of the galaxy");
@@ -44,7 +44,7 @@ const hitchhikersCharacters = [
 
 // a) Create a test with an expect statement using the variables provided.
 
-test("Test hodgepodge1", () => {
+describe("Test hodgepodge1", () => {
   const filteredArray = hodgepodge1.filter(item => typeof item === "number");
   const transformedArray = filteredArray.map(item => item >= 0 ? Math.floor(item / 10) : -1);
   expect(transformedArray).toEqual([2, 0, -1, 0]);
@@ -79,7 +79,7 @@ function getRemainders(arr) {
 
 // a) Create a test with an expect statement using the variables provided.
 
-test("Test cubeAndSum1", () => {
+describe("Test cubeAndSum1", () => {
   const sum = cubeAndSum1.reduce((total, number) => total + Math.pow(number, 3), 0);
   expect(sum).toEqual(99);
 });
